@@ -1,0 +1,8 @@
+.wrapper{
+    height: 100vh;
+}
+
+#previewImage{
+    cursor: pointer;
+    border: 5px solid lightskyblue;
+}
