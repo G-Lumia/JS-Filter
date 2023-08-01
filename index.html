@@ -18,34 +18,70 @@
 
             <div class="d-flex justify-content-center">
                 <input type="file" id="imgInput" style="display: none">
-                <img id="previewImage" src="./img/upload.jpg" alt="Preview" width="400px">
+                <img id="loadImage" src="./img/upload.jpg" alt="Preview" width="400px">
+                <img id="previewImage" class="d-none" src="" alt="loadimage" width="400px">
             </div>
 
             <div class="mt-5 d-flex justify-content-center gap-3">
-                <button>
-                    Grayscale
-                </button>
-                <button>
+                <div class="d-flex flex-column"> 
+                    <button id="grayButton" class="filter-button" data-slider="graySlider">
+                        Grayscale
+                    </button>
+                    <input class="d-none filter-slider" type="range" id="grayscale" min="0" max="100" value="0" data-slider="graySlider">
+                </div>
+            
+            <div class="d-flex flex-column">
+                <button id="saturateButton" class="filter-button" data-slider="saturateSlider">
                     Saturate
                 </button>
-                <button>
+                <input class=" d-none filter-slider" type="range" id="saturate" min="0" max="100" value="0"
+                    data-slider="saturateSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="sepiaButton" class="filter-button" data-slider="sepiaSlider">
                     Sepia
                 </button>
-                <button>
+                <input class="d-none filter-slider" type="range" id="sepia" min="0" max="100" value="0" data-slider="sepiaSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="invertButton" class="filter-button" data-slider="invertSlider">
                     Invert
                 </button>
-                <button>
+                <input class="d-none filter-slider" type="range" id="invert" min="0" max="100" value="0"
+                    data-slider="invertSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="contrastButton" class="filter-button" data-slider="contrastSlider">
                     Contrast
                 </button>
-                <button>
+                <input class="d-none filter-slider" type="range" id="contrast" min="0" max="100" value="0"
+                    data-slider="contrastSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="brightnessButton" class="filter-button" data-slider="brightnessSlider">
                     Brightness
                 </button>
-                <button>
+                <input class="d-none filter-slider" type="range" id="brightness" min="0" max="100" value="0"
+                    data-slider="brightnessSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="blurButton" class="filter-button" data-slider="blurSlider">
                     Blur
                 </button>
-                <button>
+                <input class="d-none filter-slider" type="number" id="blur" min="0" max="100" value="0"
+                    data-slider="blurSlider">
+            </div>
+            
+            <div class="d-flex flex-column">
+                <button id="hueButton" class="filter-button" data-slider="hueSlider">
                     Hue Rotate
                 </button>
+                <input class="d-none filter-slider" type="number" id="hue-rotate" min="-360" max="360" value="-360" data-slider="hueSlider">
             </div>
         </div>
     </div>
